@@ -1,11 +1,11 @@
 # Python with Node env to run tests
 
 Base image with:
-- python 2.7.14
-- node 10.14.1
-- npm 6.4.1
+- python 2.7.16
+- node 8.16.0
+- npm 6.9.0
 - chromedriver 2.44
-- sonarscanner 3.2.0.1227
+- sonarscanner 3.3.0.1492
 
 # Docker hub
 
