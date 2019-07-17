@@ -1,4 +1,4 @@
-FROM python:2.7.15
+FROM python:2.7.16
 
 # Install updates and dependencies
 RUN apt-get -qq update && \
@@ -38,10 +38,10 @@ RUN pip install -r /tmp/requirements_dev.txt -U
 ENV PATH /usr/local/google-cloud-sdk/bin:$PATH
 ENV TERM=xterm-256color
 
-ARG NODE_VERSION=10.14.1
-ARG NPM_VERSION=6.4.1
+ARG NODE_VERSION=8.16.0
+ARG NPM_VERSION=6.9.0
 ARG CHROMEDRIVER_VERSION=2.44
-ARG SONAR_SCANNER_VERSION=3.2.0.1227
+ARG SONAR_SCANNER_VERSION=3.3.0.1492
 
 RUN curl -sSJL "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" -o /tmp/node-v$NODE_VERSION-linux-x64.tar.gz \
     && tar -xzf "/tmp/node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
