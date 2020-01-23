@@ -1,14 +1,14 @@
 # Python with Node env to run tests
 
 Base image with:
-- python 3.7.3
-- node 10.15.3
-- npm 6.9.0
-- chromedriver 2.44
-- sonarscanner 3.3.0.1492
+- python 3.7.6
+- node 12.14.1
+- npm 6.13.6
+- chromedriver 80.0.3987.16
+- sonarscanner 4.2.0.1873
 - java 8
-- maven 3.6.1
-- angular cli 7.3.9
+- maven 3.6.3
+- angular cli 8.2.14
 - google-chrome
 
 # Docker hub
