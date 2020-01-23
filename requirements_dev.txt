@@ -8,4 +8,4 @@ setuptools==36.6.0
 gcdu
 alembic==1.0.8
 pipenv
-pymysql==0.9.3
+pg8000==1.13.2
