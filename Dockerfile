@@ -1,4 +1,4 @@
-FROM python:3.7.4
+FROM python:3.7.6
 
 # Install updates and dependencies
 RUN apt-get -qq update && \
@@ -38,12 +38,12 @@ RUN pip install -r /tmp/requirements_dev.txt -U
 ENV PATH /usr/local/google-cloud-sdk/bin:$PATH
 ENV TERM=xterm-256color
 
-ARG NODE_VERSION=10.15.3
-ARG NPM_VERSION=6.9.0
-ARG CHROMEDRIVER_VERSION=2.44
-ARG SONAR_SCANNER_VERSION=3.3.0.1492
-ARG MAVEN_VERSION=3.6.1
-ARG ANGULAR_CLI_VERSION=8.2.1
+ARG NODE_VERSION=12.14.1
+ARG NPM_VERSION=6.13.6
+ARG CHROMEDRIVER_VERSION=80.0.3987.16
+ARG SONAR_SCANNER_VERSION=4.2.0.1873
+ARG MAVEN_VERSION=3.6.3
+ARG ANGULAR_CLI_VERSION=8.3.23
 
 # Install Node
 RUN wget -q "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" -O /tmp/node-v$NODE_VERSION-linux-x64.tar.gz \
@@ -73,7 +73,7 @@ RUN curl -sSJL "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/
 RUN pip install pip --upgrade
 
 # Install Java 8
-RUN apt install -yq openjdk-8-jdk
+RUN apt install -yq default-jdk
 
 # Install Maven
 RUN curl -sSJL "http://ftp.unicamp.br/pub/apache/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz" -o /tmp/apache-maven-$MAVEN_VERSION-bin.tar.gz \
