@@ -20,6 +20,7 @@ RUN apt-get -qq update && apt-get install -y libnss3 && \
     imagemagick \
     netbase \
     default-jdk \
+    postgresql-client \
     google-chrome-stable && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
