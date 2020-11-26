@@ -4,8 +4,12 @@ pytest==4.4.0
 pytest-cov==2.6.1
 pytest-mock==1.10.3
 pylint==2.3.1
-setuptools==36.6.0
-gcdu
 alembic==1.0.8
 pipenv
 pg8000==1.13.2
+git+https://github.com/soulhave/google-cloud-datastore-utils.git@master#egg=gcdu
+requests==2.23.0
+urllib3==1.25.9
+google-auth==1.14.1
+google-cloud-datastore==1.12.0
+ipython==7.14.0

@@ -1,7 +1,7 @@
 # Python with Node env to run tests
 
 Base image with:
-- python 3.7.6
+- python 3.7.7
 - node 12.14.1
 - npm 6.13.6
 - chromedriver 80.0.3987.16
@@ -32,7 +32,7 @@ docker push ciandt/docker-python-gcloud-node:[vN]
 ## Test local
 
 ```
-docker run -it --volume=/Users/mendesdesouza/google-requisition-form:/localDebugRepo --workdir="/localDebugRepo" --memory=4g --memory-swap=4g --memory-swappiness=0 --entrypoint=/bin/bash ciandt/docker-python-gcloud-node
+docker run -it --volume=/Users/mendesdesouza/google-requisition-form:/localDebugRepo --workdir="/localDebugRepo" --memory=2g --memory-swap=2g --memory-swappiness=0 --entrypoint=/bin/bash ciandt/docker-python-gcloud-node
 ```
 
 vN -> Is the docker version
